@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/associated_color"
+            android:background="@color/white2">
+
+            <TextView
+                android:id="@+id/associated_class"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textSize="30dp"
+                android:paddingTop="10dp"
+                android:text="@string/cs2340"
+                android:textAlignment="center"
+                android:textStyle="bold"></TextView>
+
+            <Button
+                android:id="@+id/EditButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                android:background="@color/white2"
+                android:text="New Assignment"
+                android:backgroundTint="@color/white2"
+                app:layout_constraintTop_toBottomOf="@+id/associated_color" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <Button
+                android:id="@+id/ExamButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                android:text="New Exam"
+                android:background="@color/white2"
+                android:backgroundTint="@color/white2"
+                app:layout_constraintTop_toBottomOf="@+id/EditButton" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/returnbutton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

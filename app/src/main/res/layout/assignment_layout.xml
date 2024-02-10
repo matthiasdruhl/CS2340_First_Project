@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:backgroundTint="@color/white2"
+    android:orientation="vertical"
+    app:barrierMargin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/class_assignment"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:background="@color/white2"
+            android:textSize="25dp"
+            android:paddingTop="10dp"
+            android:text="Assignment: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingTop="10dp"
+            android:textSize="25dp"
+            android:text="Assignment "
+            android:background="@color/white2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/due_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:paddingBottom="10dp"
+            android:text="Due Date:">
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/edit_assignment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white2"
+                android:text="Edit">
+            </androidx.appcompat.widget.AppCompatButton>
+            <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white2"
+            android:text="Delete"
+            android:id="@+id/remove_assignment">
+            </androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+</LinearLayout>

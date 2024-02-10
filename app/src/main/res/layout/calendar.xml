@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/holder"
+    android:layout_width="match_parent"
+    android:background="@color/white2"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="60dp">
+        <LinearLayout
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/layou"
+            android:layout_height="wrap_content">
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add an Exam:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:fontFamily="sans-serif-condensed-medium"
+                app:textAllCaps="false" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/textView2">
+                <LinearLayout
+                    android:id="@+id/dayContent"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/textInput"
+                        android:hint= "Enter Class Name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/dayContent2"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/textInput4"
+                        android:hint= "Enter Type"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/dayContent5"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/textInput5"
+                        android:hint= "Enter Name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dayContent3"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/textInput2"
+                        android:hint= "Enter Location"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_height="50dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/dayContent4"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/textInput3"
+                        android:hint= "Enter Time"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/saveTextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:textSize="20dp"
+                    android:text="@string/SaveText" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="60dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/homePage"
+            android:background="@color/ashGrey"
+            android:text="Home Page">
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:id="@+id/calendar_button"
+            android:background="@color/ashGrey"
+            android:text="Calendar">
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:id="@+id/todo_button"
+            android:background="@color/ashGrey"
+            android:text="To Do List">
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FirstProject</string>
+    <string name="cs2050">CS2050</string>
+    <string name="cs2340">CS2340</string>
+    <string name="cs2110">CS2110</string>
+    <string name="app_name2">Saved Data</string>
+    <string name="writeSomething2">Class details</string>
+    <string name="SaveText2">Enter</string>
+    <string name="EnterDate">Section</string>
+    <string name="EnterTime">Time </string>
+    <string name="SavedData">Weekdays</string>
+    <string name="button">Assignment</string>
+    <string name="Name">Class Name</string>
+    <string name="SelectedDay">"Selected Day: "</string>
+    <string name="writeSomething">"Enter Assignment "</string>
+    <string name="SaveText">"Save"</string>
+    <string name="app_name3">Todo list final</string>
+    <string name="add_task">Add Task</string>
+    <string name="delete_task">Delete</string>
+    <string name="edit_task">Edit the Task\n</string>
+</resources>
